@@ -10,7 +10,7 @@ function App() {
   return (
     <div className='flex min-h-screen'>
       <Nav />
-      <main className='flex-1 p-6'>
+      <main>
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/resume' element={<About />}/>

@@ -4,7 +4,7 @@ function Home() {
 
   return (
     <>
-      <img src={headshot} alt="headshot" />
+      <img src={headshot} alt="headshot" className='mx-20' />
     </>
   )
 }
