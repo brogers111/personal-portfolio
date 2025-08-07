@@ -2,7 +2,7 @@ function Projects() {
 
   return (
     <>
-      Projects
+      Technical Projects
     </>
   )
 }
