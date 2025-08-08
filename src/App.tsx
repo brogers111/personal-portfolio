@@ -8,9 +8,9 @@ import Contact from './components/Contact'
 function App() {
 
   return (
-    <div className='flex min-h-screen ml-20 cursor-custom'>
+    <div className='flex pl-20 cursor-custom'>
       <Nav />
-      <main>
+      <main className='flex-grow'>
         <Routes>
           <Route path='/' element={<Home />}/>
           <Route path='/resume' element={<About />}/>

@@ -4,15 +4,20 @@
 
 @layer utilities {
     .cursor-custom {
-        cursor: url('/cursor.svg') 5 5, auto;
+        cursor: url('/cursor.svg') 0 0, auto;
     }
 
     .cursor-pointer-custom {
-        cursor: url('/cursor-pointer.svg') 5 5, pointer;
+        cursor: url('/cursor-pointer.svg') 0 0, pointer;
     }
 }
 
 @font-face {
     font-family: 'bluffolk';
     src: url('./assets/fonts/Bluffolk-nAD4V.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'dongle';
+    src: url('./assets/fonts/Dongle-Light.ttf') format('truetype');
 }

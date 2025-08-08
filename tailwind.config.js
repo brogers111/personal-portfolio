@@ -5,6 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         bluffolk: ["bluffolk", "sans-serif"],
+        dongle: ["dongle", "sans-serif"],
       },
     },
   },
