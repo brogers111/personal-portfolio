@@ -8,7 +8,7 @@ import Contact from './components/Contact'
 function App() {
 
   return (
-    <div className='flex min-h-screen'>
+    <div className='flex min-h-screen ml-20 cursor-custom'>
       <Nav />
       <main>
         <Routes>

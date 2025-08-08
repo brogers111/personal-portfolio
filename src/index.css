@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+    .cursor-custom {
+        cursor: url('/cursor.svg') 5 5, auto;
+    }
+
+    .cursor-pointer-custom {
+        cursor: url('/cursor-pointer.svg') 5 5, pointer;
+    }
+}
+
+@font-face {
+    font-family: 'bluffolk';
+    src: url('./assets/fonts/Bluffolk-nAD4V.ttf') format('truetype');
+}
