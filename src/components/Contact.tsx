@@ -11,9 +11,11 @@ function Contact() {
         <p className="pl-80 font-dongle text-3xl text-gray-300">INFORMATION</p>
       </div>
       <div className='flex flex-col items-center text-center mx-80'>
-        <p className='py-4 font-dongle text-4xl text-gray-800'>Email: <span className='text-gray-400'>ber64111@gmail.com</span></p>
+        <p className='py-4 font-dongle text-4xl text-gray-800'>
+          Email: <a href='mailto:ber64111@gmail.com' className='text-gray-400 cursor-pointer-custom'>ber64111@gmail.com</a></p>
         <div className="border-b-2 border-gray-200 w-full"></div>
-        <p className='py-4 font-dongle text-4xl text-gray-800'>Phone: <span className='text-gray-400'>(507) 508-6725</span></p>
+        <p className='py-4 font-dongle text-4xl text-gray-800'>
+          Phone: <a href='tel:+15075086725' className='text-gray-400 cursor-pointer-custom'>(507) 508-6725</a></p>
         <div className="border-b-2 border-gray-200 w-full"></div>
         <a
           href="https://github.com/brogers111"
