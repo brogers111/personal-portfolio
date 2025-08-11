@@ -8,6 +8,7 @@ import gsLogo from '../assets/gs-logo.jpeg'
 import muLogo from '../assets/mu-logo.png'
 import msuLogo from '../assets/msu-logo.jpg'
 import tripletenLogo from '../assets/tripleten-logo.jpg'
+import asijLogo from '../assets/asij-logo.png'
 
 function Resume() {
 
@@ -15,7 +16,7 @@ function Resume() {
     <>
       <div className='px-20 py-20'>
         <div className="flex justify-between">
-          <div className=''>
+          <div>
             <p className="font-dongle text-3xl text-gray-300">REVIEW MY CAREER</p>
             <h1 className="font-bluffolk text-8xl whitespace-nowrap text-gray-600">EXPERIENCE</h1>
           </div>
@@ -189,13 +190,33 @@ function Resume() {
           </div>
           <div className='flex flex-col gap-2'>
             <p className='font-dongle text-2xl text-gray-400 leading-none max-w-[600px] border-b border-gray-200'>
-              Coursework included topics such as entrepreneurship, accounting principles, business law, business ethics, a 6-month internship, and a cumulative final business plan pitch event in front of 8+ potential investors.
+              Coursework included topics such as entrepreneurship, accounting principles, business law, business ethics, a 6-month internship, and a cumulative final business plan pitch event in front of 8+ investors.
             </p>
             <p className='font-dongle text-2xl text-gray-400 leading-none max-w-[600px] border-b border-gray-200'>
               Concentration in marketing with a minor in international studies. 8-Time Dean's List Recipient.
             </p>
             <p className='font-dongle text-2xl text-gray-400 leading-none max-w-[600px]'>
               Graduated with Honors, Summa Cum Laude, and 3.96 GPA.
+            </p>
+          </div>
+        </div>
+        <div className="border-b-2 border-gray-200 pt-10"></div>
+        <div className='flex justify-between pt-10'>
+          <div>
+            <img src={asijLogo} alt="ASIJ logo" className='h-6' />
+            <p className='pt-2 font-dongle text-xl text-gray-400'>The American School in Japan - Tokyo, Japan</p>
+            <p className='font-dongle text-4xl text-gray-700'>Elementary, Middle, & High School</p>
+            <p className='font-dongle text-2xl text-gray-400'>August, 2002 - May, 2015</p>
+          </div>
+          <div className='flex flex-col gap-2'>
+            <p className='font-dongle text-2xl text-gray-400 leading-none max-w-[600px] border-b border-gray-200'>
+              Coursework included college-level classes such as AP Physics, AP Chemistry, AP Economics, AP Calculus AB, and AP World History
+            </p>
+            <p className='font-dongle text-2xl text-gray-400 leading-none max-w-[600px] border-b border-gray-200'>
+              Captain of varsity basketball, football, and baseball. Two-time Abot Kamay service trip participant.
+            </p>
+            <p className='font-dongle text-2xl text-gray-400 leading-none max-w-[600px]'>
+              Graduated with 4.12 GPA.
             </p>
           </div>
         </div>
