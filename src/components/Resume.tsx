@@ -57,7 +57,7 @@ const experience = [
     dates: "January, 2023 - Present",
     bullets: [
       "Developed and executed 30+ effective search and local SEO campaigns, increasing organic traffic by 70% and conversions by 107% for clients in finance, senior living, healthcare, and self-storage industries within 12 months.",
-      "Utilized advanced SEO tools (Ahrefs, SEMrush, Screaming Frog, Google Search Console, Google Tag Manager, Google Analytics 4) to conduct keyword research, track valued KPI’s, and deliver monthly reports to clients.",
+      "Utilized advanced SEO tools (Ahrefs, SEMrush, Screaming Frog, GSC, GTM, GA4, Ryte, BrightLocal, STAT) to conduct keyword research, track valued KPI’s, and deliver monthly reports to clients.",
       "Collaborated with cross-functional teams to implement on-page and technical SEO strategies, improving website rankings, conversion rates, and user experience."
     ]
   },
