@@ -2,15 +2,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 // Logos
-import amsiveLogo from '../assets/amsive-logo.png'
-import sbsLogo from '../assets/sbs-logo.jpg'
-import ofcaLogo from '../assets/ofca-logo.png'
-import inscriptionLogo from '../assets/inscription-logo.png'
-import gsLogo from '../assets/gs-logo.jpeg'
-import muLogo from '../assets/mu-logo.png'
-import msuLogo from '../assets/msu-logo.jpg'
-import tripletenLogo from '../assets/tripleten-logo.jpg'
-import asijLogo from '../assets/asij-logo.png'
+import amsiveLogo from '../assets/logos/amsive-logo.png'
+import sbsLogo from '../assets/logos/sbs-logo.jpg'
+import ofcaLogo from '../assets/logos/ofca-logo.png'
+import inscriptionLogo from '../assets/logos/inscription-logo.png'
+import gsLogo from '../assets/logos/gs-logo.jpeg'
+import muLogo from '../assets/logos/mu-logo.png'
+import msuLogo from '../assets/logos/msu-logo.jpg'
+import tripletenLogo from '../assets/logos/tripleten-logo.jpg'
+import asijLogo from '../assets/logos/asij-logo.png'
 
 // Components
 const SectionHeading = ({ subtitle, title }: { subtitle: string; title: string }) => (
