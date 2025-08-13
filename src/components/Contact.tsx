@@ -8,7 +8,7 @@ function ContactItem({ label, value, href, isExternal = false }: { label: string
 
   return (
     <>
-      <p className='py-4 font-dongle text-4xl text-gray-800'>
+      <p className='my-4 font-dongle text-4xl text-gray-800'>
         {label}:{" "}
         <a
           href={href}
@@ -54,7 +54,7 @@ function Contact() {
 
   return (
     <>
-      <div className='px-6 md:px-20 py-20'>
+      <div className='px-4 py-4 md:mx-20 md:my-20'>
         <p className="font-dongle text-3xl text-gray-300">HERE'S MY</p>
         <h1 className="font-bluffolk text-8xl whitespace-nowrap text-gray-600">CONTACT</h1>
         <p className="text-right pr-10 md:text-left md:pl-80 font-dongle text-3xl text-gray-300">INFORMATION</p>

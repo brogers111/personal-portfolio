@@ -218,32 +218,63 @@ function Projects() {
   ]
 
   return (
-    <div className="px-20 py-20">
-      <div>
-        <p className="font-dongle text-3xl text-gray-300">REVIEW MY TECHNICAL</p>
-        <h1 className="font-bluffolk text-8xl whitespace-nowrap text-gray-600">PROJECTS</h1>
+    <>
+      {/* Desktop Projects */}
+      <div className="hidden md:visible px-20 py-20">
+        <div>
+          <p className="font-dongle text-3xl text-gray-300">REVIEW MY TECHNICAL</p>
+          <h1 className="font-bluffolk text-8xl whitespace-nowrap text-gray-600">PROJECTS</h1>
+        </div>
+
+        <p className="font-dongle text-3xl text-gray-300 pt-10">OVERALL SKILLS:</p>
+
+        <p className="font-dongle text-2xl text-gray-400">TECHNICAL:</p>
+        <div className="flex flex-wrap gap-2">
+          {technicalSkills.map(skill => <SkillPill key={skill} name={skill} />)}
+        </div>
+
+        <p className="font-dongle text-2xl text-gray-400 pt-4">WORKPLACE:</p>
+        <div className="flex flex-wrap gap-2">
+          {workplaceSkills.map(skill => <SkillPill key={skill} name={skill} />)}
+        </div>
+
+        <div className="border-b-2 border-gray-200 pt-10"></div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {projects.map((project, i) => (
+            <ProjectCard key={i} {...project} />
+          ))}
+        </div>
       </div>
 
-      <p className="font-dongle text-3xl text-gray-300 pt-10">OVERALL SKILLS:</p>
+      {/* Mobile Projects */}
+      <div className='md:hidden px-4 py-4'>
+        <div>
+          <p className="font-dongle text-3xl text-gray-300">REVIEW MY TECHNICAL</p>
+          <h1 className="font-bluffolk text-8xl whitespace-nowrap text-gray-600">PROJECTS</h1>
+        </div>
 
-      <p className="font-dongle text-2xl text-gray-400">TECHNICAL:</p>
-      <div className="flex flex-wrap gap-2">
-        {technicalSkills.map(skill => <SkillPill key={skill} name={skill} />)}
+        <p className="font-dongle text-3xl text-gray-300 pt-10">OVERALL SKILLS:</p>
+
+        <p className="font-dongle text-2xl text-gray-400">TECHNICAL:</p>
+        <div className="flex flex-wrap gap-2">
+          {technicalSkills.map(skill => <SkillPill key={skill} name={skill} />)}
+        </div>
+
+        <p className="font-dongle text-2xl text-gray-400 pt-4">WORKPLACE:</p>
+        <div className="flex flex-wrap gap-2">
+          {workplaceSkills.map(skill => <SkillPill key={skill} name={skill} />)}
+        </div>
+
+        <div className="border-b-2 border-gray-200 pt-10"></div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
+          {projects.map((project, i) => (
+            <ProjectCard key={i} {...project} />
+          ))}
+        </div>
       </div>
-
-      <p className="font-dongle text-2xl text-gray-400 pt-4">WORKPLACE:</p>
-      <div className="flex flex-wrap gap-2">
-        {workplaceSkills.map(skill => <SkillPill key={skill} name={skill} />)}
-      </div>
-
-      <div className="border-b-2 border-gray-200 pt-10"></div>
-
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-        {projects.map((project, i) => (
-          <ProjectCard key={i} {...project} />
-        ))}
-      </div>
-    </div>
+    </>
   )
 }
 
