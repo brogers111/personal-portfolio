@@ -8,7 +8,7 @@ import Contact from './components/Contact'
 function App() {
 
   return (
-    <div className='flex pl-20 cursor-custom'>
+    <div className='flex md:pl-20 md:cursor-custom'>
       <Nav />
       <main className='flex-grow'>
         <Routes>

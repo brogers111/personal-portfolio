@@ -54,12 +54,12 @@ function Contact() {
 
   return (
     <>
-      <div className='px-20 py-20'>
+      <div className='px-6 md:px-20 py-20'>
         <p className="font-dongle text-3xl text-gray-300">HERE'S MY</p>
         <h1 className="font-bluffolk text-8xl whitespace-nowrap text-gray-600">CONTACT</h1>
-        <p className="pl-80 font-dongle text-3xl text-gray-300">INFORMATION</p>
+        <p className="text-right pr-10 md:text-left md:pl-80 font-dongle text-3xl text-gray-300">INFORMATION</p>
       </div>
-      <div className='flex flex-col items-center text-center mx-80'>
+      <div className='flex flex-col items-center text-center mx-8 md:mx-80'>
         {contacts.map((contact, index) => (
           <ContactItem key={index} {...contact} />
         ))}
