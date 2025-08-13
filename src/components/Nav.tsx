@@ -44,7 +44,7 @@ function Nav() {
       </nav>
 
       {/* Mobile Floating Nav */}
-      <nav className="md:hidden fixed bottom-10 right-10 z-50 bg-white backdrop-blur-md rounded-2xl shadow-2xl flex flex-col gap-10 px-2 py-6">
+      <nav className="md:hidden fixed bottom-4 right-4 z-50 bg-white backdrop-blur-md rounded-2xl shadow-2xl flex flex-col gap-10 px-2 py-6">
         <Link
           to="/"
           className="text-gray-400 text-4xl"
