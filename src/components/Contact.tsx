@@ -80,7 +80,7 @@ function Contact() {
         <h1 className="font-bluffolk text-6xl md:text-8xl whitespace-nowrap text-gray-600">CONTACT</h1>
         <p className="text-left pl-40 md:pl-80 font-dongle text-3xl text-gray-300">INFORMATION</p>
       </div>
-      <div className='flex flex-col items-center text-center mx-8 md:mx-80'>
+      <div className='flex flex-col items-center text-center mx-8 md:mx-80 pt-20 md:pt-0'>
         {contacts.map((contact, index) => (
           <ContactItem key={index} {...contact} />
         ))}

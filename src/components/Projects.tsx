@@ -21,7 +21,7 @@ import spotsThree from '../assets/project-photos/spots-3.png'
 
 function SkillPill({ name }: { name: string }) {
   return (
-    <p className="font-dongle text-gray-400 text-2xl bg-gray-200 md:bg-gray-100 rounded-3xl inline px-4 hover:bg-gray-200">
+    <p className="font-dongle text-gray-500 text-2xl bg-gray-200 md:bg-gray-200 rounded-3xl inline px-4 hover:bg-gray-300">
       {name}
     </p>
   )
