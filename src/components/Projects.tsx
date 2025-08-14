@@ -21,7 +21,7 @@ import spotsThree from '../assets/project-photos/spots-3.png'
 
 function SkillPill({ name }: { name: string }) {
   return (
-    <p className="font-dongle text-gray-400 text-2xl bg-gray-100 rounded-3xl inline px-4 hover:bg-gray-200">
+    <p className="font-dongle text-gray-400 text-2xl bg-gray-200 md:bg-gray-100 rounded-3xl inline px-4 hover:bg-gray-200">
       {name}
     </p>
   )
@@ -50,7 +50,7 @@ function ProjectCard({
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
-    <div className="mt-4 p-4 border-2 border-gray-100 rounded-2xl">
+    <div className="mt-10 md:mt-4 p-4 border-2 bg-gray-100 rounded-2xl">
       <p className="pb-2 font-dongle text-4xl text-gray-600 leading-none">{title}</p>
 
       <div className="flex justify-center mb-4 flex-wrap">
@@ -67,7 +67,7 @@ function ProjectCard({
         ))}
       </div>
 
-      <div className="relative w-full h-[24vw] mx-auto">
+      <div className="relative w-full h-[45vw] md:h-[24vw] mx-auto">
         {images.map(({ src, alt, style, zIndex }, i) => {
           const isHovered = hoveredIndex === i
           return (
@@ -198,7 +198,6 @@ function Projects() {
     {
       title: "SPOTS Application",
       links: [
-        { label: "Website", url: "https://brogers111.github.io/se_project_spots/" },
         { label: "Demo", url: "https://drive.google.com/file/d/1-oEg8NBMb1xg5lhtA5YEGWZHWFxISQF6/view?usp=sharing" },
         { label: "GitHub", url: "https://github.com/brogers111/se_project_spots" },
         { label: "Figma", url: "https://www.figma.com/design/1qCS9RkiKiVquBhpOJqjZ0/Sprint-5-Project--Spots?node-id=0-1&p=f&t=AuGsRO0xBtxR5OTR-0" }
@@ -220,41 +219,13 @@ function Projects() {
   return (
     <>
       {/* Desktop Projects */}
-      <div className="hidden md:visible px-20 py-20">
+      <div className="px-4 py-4 md:px-20 md:py-20">
         <div>
           <p className="font-dongle text-3xl text-gray-300">REVIEW MY TECHNICAL</p>
-          <h1 className="font-bluffolk text-8xl whitespace-nowrap text-gray-600">PROJECTS</h1>
+          <h1 className="font-bluffolk text-6xl md:text-8xl whitespace-nowrap text-gray-600">PROJECTS</h1>
         </div>
 
-        <p className="font-dongle text-3xl text-gray-300 pt-10">OVERALL SKILLS:</p>
-
-        <p className="font-dongle text-2xl text-gray-400">TECHNICAL:</p>
-        <div className="flex flex-wrap gap-2">
-          {technicalSkills.map(skill => <SkillPill key={skill} name={skill} />)}
-        </div>
-
-        <p className="font-dongle text-2xl text-gray-400 pt-4">WORKPLACE:</p>
-        <div className="flex flex-wrap gap-2">
-          {workplaceSkills.map(skill => <SkillPill key={skill} name={skill} />)}
-        </div>
-
-        <div className="border-b-2 border-gray-200 pt-10"></div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
-          {projects.map((project, i) => (
-            <ProjectCard key={i} {...project} />
-          ))}
-        </div>
-      </div>
-
-      {/* Mobile Projects */}
-      <div className='md:hidden px-4 py-4'>
-        <div>
-          <p className="font-dongle text-3xl text-gray-300">REVIEW MY TECHNICAL</p>
-          <h1 className="font-bluffolk text-8xl whitespace-nowrap text-gray-600">PROJECTS</h1>
-        </div>
-
-        <p className="font-dongle text-3xl text-gray-300 pt-10">OVERALL SKILLS:</p>
+        <p className="font-dongle text-3xl text-gray-300 pt-10">SKILLS:</p>
 
         <p className="font-dongle text-2xl text-gray-400">TECHNICAL:</p>
         <div className="flex flex-wrap gap-2">

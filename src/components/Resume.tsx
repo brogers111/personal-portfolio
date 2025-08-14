@@ -16,18 +16,18 @@ import asijLogo from '../assets/logos/asij-logo.png'
 const SectionHeading = ({ subtitle, title }: { subtitle: string; title: string }) => (
   <>
     <p className="font-dongle text-3xl text-gray-300">{subtitle}</p>
-    <h1 className="font-bluffolk text-8xl whitespace-nowrap text-gray-600">{title}</h1>
+    <h1 className="font-bluffolk text-6xl md:text-8xl whitespace-nowrap text-gray-600 pb-4 md:pb-0">{title}</h1>
   </>
 );
 
 const ResumeItem = ({ logo, logoAlt, location, title, duration, dates, bullets }: { logo: string; logoAlt: string; location: string; title: string; duration: string; dates: string; bullets: string[] }) => (
-  <div className='flex justify-between pt-10'>
+  <div className='md:flex justify-between pt-10'>
     <div>
-      <img src={logo} alt={logoAlt} className='h-6' />
+      <img src={logo} alt={logoAlt} className='h-10 md:h-6' />
       <p className='pt-2 font-dongle text-xl text-gray-400'>{location}</p>
       <p className='font-dongle text-4xl text-gray-700'>
         {title}
-        <span className='pl-2 text-2xl text-gray-400'>({duration})</span>
+        {duration && <span className='pl-2 text-2xl text-gray-400'>({duration})</span>}
       </p>
       <p className='font-dongle text-2xl text-gray-400'>{dates}</p>
     </div>
@@ -35,7 +35,7 @@ const ResumeItem = ({ logo, logoAlt, location, title, duration, dates, bullets }
       {bullets.map((bullet, i) => (
         <p
           key={i}
-          className={`font-dongle text-2xl text-gray-400 leading-none max-w-[600px] ${i !== bullets.length - 1 ? 'border-b border-gray-200' : ''}`}
+          className={`font-dongle px-2 py-2 md:py-0 md:px-0 text-2xl text-gray-400 leading-none max-w-[600px] ${i !== bullets.length - 1 ? 'border-b border-gray-200' : ''}`}
         >
           {bullet}
         </p>
@@ -53,8 +53,8 @@ const experience = [
     logoAlt: "Amsive logo",
     location: "New York, NY, USA (Remote)",
     title: "SEO Specialist",
-    duration: "2 yrs 8 mos",
-    dates: "January, 2023 - Present",
+    duration: "3 yrs 7 mos",
+    dates: "February, 2022 - Present",
     bullets: [
       "Developed and executed 30+ effective search and local SEO campaigns, increasing organic traffic by 70% and conversions by 107% for clients in finance, senior living, healthcare, and self-storage industries within 12 months.",
       "Utilized advanced SEO tools (Ahrefs, SEMrush, Screaming Frog, GSC, GTM, GA4, Ryte, BrightLocal, STAT) to conduct keyword research, track valued KPI’s, and deliver monthly reports to clients.",
@@ -168,41 +168,78 @@ const education = [
 
 export default function Resume() {
   return (
-    <div className='px-20 py-20'>
-      <div className="flex justify-between">
-        <div>
-          <SectionHeading subtitle="REVIEW MY CAREER" title="EXPERIENCE" />
+    <>
+      {/* Desktop Resume */}
+      <div className='hidden md:block px-20 py-20'>
+        <div className="flex justify-between">
+          <div>
+            <SectionHeading subtitle="REVIEW MY CAREER" title="EXPERIENCE" />
+          </div>
+          <div className='pl-28'>
+            <p className="font-dongle text-2xl leading-none text-gray-400">
+              Full-stack developer and SEO Specialist with 5 years of experience, a bachelor’s degree in marketing, a successful bootstrapped business exit, and currently pursuing a second degree in mechanical engineering.
+            </p>
+            <a href="https://www.linkedin.com/in/brandonerogers/" target="_blank" rel='noopener noreferrer' className="pt-6 font-dongle text-2xl text-gray-400 cursor-pointer-custom inline-flex items-baseline gap-1">
+              LinkedIn <FontAwesomeIcon className='size-[0.6rem]' icon={faArrowUpRightFromSquare} />
+            </a>
+            <a href="https://github.com/brogers111" target="_blank" rel='noopener noreferrer' className="pt-6 pl-4 font-dongle text-2xl text-gray-400 cursor-pointer-custom inline-flex items-baseline gap-1">
+              GitHub <FontAwesomeIcon className='size-[0.6rem]' icon={faArrowUpRightFromSquare} />
+            </a>
+          </div>
         </div>
-        <div className='pl-28'>
-          <p className="font-dongle text-2xl leading-none text-gray-400">
-            Full-stack developer and SEO Specialist with 5 years of experience, a bachelor’s degree in marketing, a successful bootstrapped business exit, and currently pursuing a second degree in mechanical engineering.
-          </p>
-          <a href="https://www.linkedin.com/in/brandonerogers/" target="_blank" rel='noopener noreferrer' className="pt-6 font-dongle text-2xl text-gray-400 cursor-pointer-custom inline-flex items-baseline gap-1">
+
+        {experience.map((job, i) => (
+          <div key={i}>
+            <ResumeItem {...job} />
+            {i !== experience.length - 1 && <Divider />}
+          </div>
+        ))}
+
+        <div className="pt-20">
+          <SectionHeading subtitle="REVIEW MY" title="EDUCATION" />
+        </div>
+
+        {education.map((school, i) => (
+          <div key={i}>
+            <ResumeItem {...school} />
+            {i !== education.length - 1 && <Divider />}
+          </div>
+        ))}
+      </div>
+
+      {/* Mobile Resume */}
+      <div className='md:hidden px-4 py-4'>
+        <SectionHeading subtitle="REVIEW MY" title="CAREER" />
+        <div className='text-right'>
+          <a href="https://www.linkedin.com/in/brandonerogers/" target="_blank" rel='noopener noreferrer' className="font-dongle text-2xl text-gray-600 cursor-pointer-custom inline-flex items-baseline gap-1">
             LinkedIn <FontAwesomeIcon className='size-[0.6rem]' icon={faArrowUpRightFromSquare} />
           </a>
-          <a href="https://github.com/brogers111" target="_blank" rel='noopener noreferrer' className="pt-6 pl-4 font-dongle text-2xl text-gray-400 cursor-pointer-custom inline-flex items-baseline gap-1">
+          <a href="https://github.com/brogers111" target="_blank" rel='noopener noreferrer' className="pl-4 font-dongle text-2xl text-gray-600 cursor-pointer-custom inline-flex items-baseline gap-1">
             GitHub <FontAwesomeIcon className='size-[0.6rem]' icon={faArrowUpRightFromSquare} />
           </a>
+          <p className="font-dongle text-left text-2xl leading-none text-gray-400 pt-4">
+            Full-stack developer and SEO Specialist with 5 years of experience, a bachelor’s degree in marketing, a successful bootstrapped business exit, and currently pursuing a second degree in mechanical engineering.
+          </p>
         </div>
+
+        {experience.map((job, i) => (
+          <div key={i}>
+            <ResumeItem {...job} />
+            {i !== experience.length - 1 && <Divider />}
+          </div>
+        ))}
+
+        <div className="pt-20">
+          <SectionHeading subtitle="REVIEW MY" title="EDUCATION" />
+        </div>
+
+        {education.map((school, i) => (
+          <div key={i}>
+            <ResumeItem {...school} />
+            {i !== education.length - 1 && <Divider />}
+          </div>
+        ))}
       </div>
-
-      {experience.map((job, i) => (
-        <div key={i}>
-          <ResumeItem {...job} />
-          {i !== experience.length - 1 && <Divider />}
-        </div>
-      ))}
-
-      <div className="pt-20">
-        <SectionHeading subtitle="REVIEW MY" title="EDUCATION" />
-      </div>
-
-      {education.map((school, i) => (
-        <div key={i}>
-          <ResumeItem {...school} />
-          {i !== education.length - 1 && <Divider />}
-        </div>
-      ))}
-    </div>
+    </>
   );
 }

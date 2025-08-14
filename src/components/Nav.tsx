@@ -44,31 +44,31 @@ function Nav() {
       </nav>
 
       {/* Mobile Floating Nav */}
-      <nav className="md:hidden fixed bottom-4 right-4 z-50 bg-white backdrop-blur-md rounded-2xl shadow-2xl flex flex-col gap-10 px-2 py-6">
+      <nav className="md:hidden fixed bottom-4 right-4 z-50 bg-white/20 backdrop-blur-sm rounded-2xl shadow-2xl flex flex-col gap-4 px-2 py-3">
         <Link
           to="/"
-          className="text-gray-400 text-4xl"
+          className="text-gray-400 text-2xl"
           title="Home"
         >
           <FontAwesomeIcon icon={faHouse} />
         </Link>
         <Link
           to="/resume"
-          className="text-gray-400 text-4xl"
+          className="text-gray-400 text-2xl"
           title="Resume"
         >
           <FontAwesomeIcon icon={faFile} />
         </Link>
         <Link
           to="/technical-projects"
-          className="text-gray-400 text-4xl"
+          className="text-gray-400 text-2xl"
           title="Technical Projects"
         >
           <FontAwesomeIcon icon={faHammer} />
         </Link>
         <Link
           to="/contact"
-          className="text-gray-400 text-4xl"
+          className="text-gray-400 text-2xl"
           title="Contact"
         >
           <FontAwesomeIcon icon={faAddressCard} />
