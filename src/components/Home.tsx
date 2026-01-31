@@ -19,6 +19,7 @@ function Home() {
             <BulletItem>Digital Marketing</BulletItem>
             <BulletItem>Graphic Design</BulletItem>
             <BulletItem>UI/UX Design</BulletItem>
+            <BulletItem>3D Modeling</BulletItem>
           </ul>
         </div>
         <div>
@@ -43,7 +44,7 @@ function Home() {
               <FontAwesomeIcon className='size-[0.6rem]' icon={faArrowUpRightFromSquare} />
             </a>
           <img src={headshot} alt="Brandon Rogers headshot" className="mt-56 ml-20 w-[400px] h-[400px] rounded-3xl" />
-          <p className="mt-4 ml-16 font-dongle text-xl text-gray-400">Full-stack software engineer and SEO Specialist with <span className="text-gray-600">4+ years</span> of experience.</p>
+          <p className="mt-4 ml-16 font-dongle text-xl text-gray-400">Full-stack software engineer and SEO Specialist with <span className="text-gray-600">6+ years</span> of experience.</p>
         </div>
       </section>
 
@@ -77,7 +78,7 @@ function Home() {
         <div className='rounded-2xl overflow-hidden mx-12 mt-4'>
           <img src={headshot} alt="Brandon Rogers headshot" />
         </div>
-        <p className="px-10 py-4 font-dongle text-center text-2xl text-gray-400 leading-none">Full-stack software engineer and SEO Specialist with <span className="text-gray-600">4+ years</span> of experience.</p>
+        <p className="px-10 py-4 font-dongle text-center text-2xl text-gray-400 leading-none">Full-stack software engineer and SEO Specialist with <span className="text-gray-600">6+ years</span> of experience.</p>
         
         <h2 className="pt-2 pl-10 font-dongle text-3xl text-gray-800">My Expertise:</h2>
         <ul className="list-disc pl-10">
@@ -87,6 +88,7 @@ function Home() {
           <BulletItem>Digital Marketing</BulletItem>
           <BulletItem>Graphic Design</BulletItem>
           <BulletItem>UI/UX Design</BulletItem>
+          <BulletItem>3D Modeling</BulletItem>
         </ul>
       </div>
     </section>

@@ -18,6 +18,12 @@ import newsThree from '../assets/project-photos/news-3.png'
 import spotsOne from '../assets/project-photos/spots-1.png'
 import spotsTwo from '../assets/project-photos/spots-2.png'
 import spotsThree from '../assets/project-photos/spots-3.png'
+import futureTroveOne from '../assets/project-photos/futuretrove-1.png'
+import futureTroveTwo from '../assets/project-photos/futuretrove-2.png'
+import futureTroveThree from '../assets/project-photos/futuretrove-3.png'
+import financeflowOne from '../assets/project-photos/financeflow-1.png'
+import financeflowTwo from '../assets/project-photos/financeflow-2.png'
+import financeflowThree from '../assets/project-photos/financeflow-3.png'
 
 function SkillPill({ name }: { name: string }) {
   return (
@@ -110,9 +116,10 @@ function ProjectCard({
 function Projects() {
   const technicalSkills = [
     "HTML5", "CSS3", "TailwindCSS", "Mantine", "Ant Design", "Material UI", "DaisyUI",
-    "JavaScript", "TypeScript", "React", "VueJS", "NodeJS", "ExpressJS", "GraphQL",
-    "Apollo Server/Client", "Postman", "MongoDB", "Git/GitHub", "REST APIs",
-    "Figma", "Adobe XD", "AutoCAD", "OnShape"
+    "JavaScript", "TypeScript", "React", "React Native", "VueJS", "NodeJS", "ExpressJS", "NextJS", "GraphQL",
+    "Apollo Server/Client", "Postman", "Prisma ORM", "PostgreSQL", "MongoDB", "Neon", "AWS S3", "Git/GitHub",
+    "REST APIs", "Figma", "Adobe XD", "VSCode", "Claude Code", "Open AI GPT-4o", "OpenAI Whisper", "Perplexity", "Resend", 
+    "Google OAuth", "Supabase", "Docker", "Vercel", "TestFlight", "Expo Go", "AutoCAD", "OnShape", "SolidWorks",
   ]
 
   const workplaceSkills = [
@@ -121,6 +128,42 @@ function Projects() {
   ]
 
   const projects = [
+    {
+      title: "FutureTrove Application",
+      links: [
+        { label: "Website", url: "https://futuretrove.com/" },
+        { label: "GitHub", url: "https://github.com/brogers111/futuretrove-api" },
+      ],
+      images: [
+        { src: futureTroveOne, alt: "FutureTrove Application Screenshot", style: { top: 0, left: 0, width: '60%' }, zIndex: 30 },
+        { src: futureTroveTwo, alt: "FutureTrove Application Screenshot", style: { top: '4vw', left: '20%', width: '60%' }, zIndex: 20 },
+        { src: futureTroveThree, alt: "FutureTrove Application Screenshot", style: { top: '8vw', left: '40%', width: '60%' }, zIndex: 10 }
+      ],
+      skills: ["React Native", "NextJS", "TailwindCSS", "Figma", "Expo Go", "Prisma ORM", "TestFlight", "Claude Code", "OpenAI Whisper"],
+      descriptionPoints: [
+        "Built full-stack iOS mobile application using React Native and Expo for cross-platform compatibility, implementing responsive UI components with custom design system following Figma specifications to ensure visual consistency across authenticated user flows.",
+        "Architected RESTful API backend using NextJS with PostgreSQL and Prisma ORM for type-safe database operations, integrating AWS S3 for video storage, OpenAI Whisper API for speech-to-text transcription, and Resend for transactional email delivery.",
+        "Implemented automated processing pipelines that generate AI-powered annual life summaries using OpenAI API (GPT-4o) with customized prompt engineering for narrative generation and thematic analysis."
+      ]
+    },
+    {
+      title: "FinanceFlow Application",
+      links: [
+        { label: "Website", url: "https://financeflow-seven-sigma.vercel.app/" },
+        { label: "GitHub", url: "https://github.com/brogers111/financeflow/" },
+      ],
+      images: [
+        { src: financeflowOne, alt: "FinanceFlow Application Screenshot", style: { top: 0, left: 0, width: '60%' }, zIndex: 30 },
+        { src: financeflowTwo, alt: "FinanceFlow Application Screenshot", style: { top: '4vw', left: '20%', width: '60%' }, zIndex: 20 },
+        { src: financeflowThree, alt: "FinanceFlow Application Screenshot", style: { top: '8vw', left: '40%', width: '60%' }, zIndex: 10 }
+      ],
+      skills: ["React", "TypeScript", "NextJS", "TailwindCSS", "Neon", "Vercel", "Prisma ORM", "Figma", "Google OAuth", "Claude Code"],
+      descriptionPoints: [
+        "Architected and deployed a full-stack finance platform using Next.js, TypeScript, and Prisma ORM with PostgreSQL, implementing secure user authentication with Google Cloud OAuth. And GraphQL APIs with Apollo Server for data fetching and real-time insights",
+        "Designed and built interactive data visualizations using Recharts to display net worth history, monthly balance flow, and expense breakdowns by category, with forward-fill algorithms for historical account snapshots and investment portfolio tracking",
+        "Built automated PDF bank statement parsing for intelligent transaction categorization, creating seamless uploads that reduced manual data entry by 90% while maintaining data accuracy"
+      ]
+    },
     {
       title: "Oregon Fire Chief's Association Application (OFCA)",
       links: [
@@ -170,7 +213,7 @@ function Projects() {
         { src: inscriptionTwo, alt: "Inscription Project Screenshot 2", style: { top: '4vw', left: '20%', width: '60%' }, zIndex: 20 },
         { src: inscriptionThree, alt: "Inscription Project Screenshot 3", style: { top: '8vw', left: '40%', width: '60%' }, zIndex: 10 }
       ],
-      skills: ["VueJS", "OpenAI API", "Perplexity AI API", "Twilio", "ElevenLabs", "GraphQL", "Deepgram", "Figma", "AWS", "Neon"],
+      skills: ["VueJS", "OpenAI API", "Perplexity API", "Twilio", "ElevenLabs", "GraphQL", "Deepgram", "Figma", "AWS", "Neon"],
       descriptionPoints: [
         "Lead a team of 3 engineers to develop a desktop and mobile application, built in VueJS, designed to allow entrepreneurs to seamlessly document their business journey and receive data and insights based on the content of their entries.",
         "Data collection, summarization, and analysis using OpenAI API (GPT-4o), Perplexity AI API, Twilio, ElevenLabs, GraphQL, and Deepgram (speech-to-text).",

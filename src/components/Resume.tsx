@@ -53,7 +53,7 @@ const experience = [
     logoAlt: "Amsive logo",
     location: "New York, NY, USA (Remote)",
     title: "SEO Specialist",
-    duration: "3 yrs 7 mos",
+    duration: "4 yrs 2 mos",
     dates: "February, 2022 - Present",
     bullets: [
       "Developed and executed 30+ effective search and local SEO campaigns, increasing organic traffic by 70% and conversions by 107% for clients in finance, senior living, healthcare, and self-storage industries within 12 months.",
@@ -124,7 +124,7 @@ const education = [
     duration: "",
     dates: "August, 2024 - May, 2028",
     bullets: [
-      "Coursework includes technical programming, materials science, robotics/mechatronics, computer aided design (AutoCAD, OnShape, Solidworks), and workpiece production, refinement, and assembly with mills and lathes.",
+      "Coursework includes technical programming, materials science, robotics/mechatronics, computer aided design (AutoCAD, OnShape, Solidworks), calculus, physics, quality assurance, and geometric dimensioning & tolerancing.",
       "Current GPA: 4.00"
     ]
   },
@@ -177,7 +177,7 @@ export default function Resume() {
           </div>
           <div className='pl-28'>
             <p className="font-dongle text-2xl leading-none text-gray-400">
-              Full-stack developer and SEO Specialist with 5 years of experience, a bachelor’s degree in marketing, a successful bootstrapped business exit, and currently pursuing a second degree in mechanical engineering.
+              Full-stack developer and SEO Specialist with 6 years of experience, a bachelor’s degree in marketing, a successful bootstrapped business exit, and currently pursuing a second degree in mechanical engineering.
             </p>
             <a href="https://www.linkedin.com/in/brandonerogers/" target="_blank" rel='noopener noreferrer' className="pt-6 font-dongle text-2xl text-gray-400 cursor-pointer-custom inline-flex items-baseline gap-1">
               LinkedIn <FontAwesomeIcon className='size-[0.6rem]' icon={faArrowUpRightFromSquare} />
@@ -218,7 +218,7 @@ export default function Resume() {
             GitHub <FontAwesomeIcon className='size-[0.6rem]' icon={faArrowUpRightFromSquare} />
           </a>
           <p className="font-dongle text-left text-2xl leading-none text-gray-400 pt-4">
-            Full-stack developer and SEO Specialist with 5 years of experience, a bachelor’s degree in marketing, a successful bootstrapped business exit, and currently pursuing a second degree in mechanical engineering.
+            Full-stack developer and SEO Specialist with 6 years of experience, a bachelor’s degree in marketing, a successful bootstrapped business exit, and currently pursuing a second degree in mechanical engineering.
           </p>
         </div>
 
