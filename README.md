@@ -1,6 +1,6 @@
 # Personal Portfolio Site
 
-To view my personal portfolio on GitHub Pages, [click here](git@github.com:brogers111/personal-portfolio.git).
+To view my personal portfolio on GitHub Pages, [click here](https://brogers111.github.io/personal-portfolio/).
 
 ## Tech Stack
 
