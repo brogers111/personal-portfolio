@@ -50,12 +50,12 @@ function ContactItem({ label, value, href, isExternal = false }: { label: string
 function Contact() {
   const contacts = [
     {
-      label: "Email:",
+      label: "Email",
       value: "ber64111@gmail.com",
       href: "mailto:ber64111@gmail.com"
     },
     {
-      label: "Phone:",
+      label: "Phone",
       value: "(507) 508-6725",
       href: "tel:+15075086725"
     },
