@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
-import headshot from "../assets/headshot.jpeg";
+import headshot from "../assets/Headshot.jpeg";
 import BulletItem from './BulletItem';
 
 function Home() {
