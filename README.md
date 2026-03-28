@@ -4,6 +4,7 @@ To view my personal portfolio on GitHub Pages, [click here](https://brogers111.g
 
 ## Tech Stack
 
+- Vercel
 - TypeScript
 - React
 - Vite
