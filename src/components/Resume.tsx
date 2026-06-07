@@ -53,7 +53,7 @@ const experience = [
     logo: turbotenantLogo,
     logoAlt: "TurboTenant logo",
     location: "Denver, Colorado, United States (Hybrid)",
-    title: "Senior SEO Manager - TurboTenant",
+    title: "Senior SEO Manager",
     duration: "4 mos",
     dates: "March, 2026 - Present",
     bullets: [
