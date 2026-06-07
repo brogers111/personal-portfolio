@@ -2,7 +2,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 // Logos
-import amsiveLogo from '../assets/logos/amsive-logo.png'
 import sbsLogo from '../assets/logos/sbs-logo.jpg'
 import ofcaLogo from '../assets/logos/ofca-logo.png'
 import inscriptionLogo from '../assets/logos/inscription-logo.png'
@@ -11,6 +10,7 @@ import muLogo from '../assets/logos/mu-logo.png'
 import msuLogo from '../assets/logos/msu-logo.jpg'
 import tripletenLogo from '../assets/logos/tripleten-logo.jpg'
 import asijLogo from '../assets/logos/asij-logo.png'
+import turbotenantLogo from '../assets/logos/turbotenant-logo.png'
 
 // Components
 const SectionHeading = ({ subtitle, title }: { subtitle: string; title: string }) => (
@@ -49,16 +49,16 @@ const Divider = () => <div className="border-b-2 border-gray-200 pt-10"></div>;
 // Data arrays
 const experience = [
   {
-    logo: amsiveLogo,
-    logoAlt: "Amsive logo",
-    location: "New York, NY, USA (Remote)",
-    title: "SEO Specialist",
-    duration: "4 yrs 2 mos",
-    dates: "February, 2022 - Present",
+    logo: turbotenantLogo,
+    logoAlt: "TurboTenant logo",
+    location: "Denver, Colorado, United States (Hybrid)",
+    title: "Senior SEO Manager - TurboTenant",
+    duration: "4 mos",
+    dates: "March, 2026 - Present",
     bullets: [
-      "Developed and executed 30+ effective search and local SEO campaigns, increasing organic traffic by 70% and conversions by 107% for clients in finance, senior living, healthcare, and self-storage industries within 12 months.",
-      "Utilized advanced SEO tools (Ahrefs, SEMrush, Screaming Frog, GSC, GTM, GA4, Ryte, BrightLocal, STAT) to conduct keyword research, track valued KPI’s, and deliver monthly reports to clients.",
-      "Collaborated with cross-functional teams to implement on-page and technical SEO strategies, improving website rankings, conversion rates, and user experience."
+      "Manages technical SEO across TurboTenant digital properties, including core web vitals, crawl optimization, structured data, and site architecture to maintain strong site health and search visibility.",
+      "Supports growth in organic traffic and signups by implementing SEO initiatives such as content optimization, SERP feature targeting (e.g., PAA, AI Overviews, video), and backlink coordination with internal teams and external partners.",
+      "Builds and maintains internal tools using software engineering skills to support SEO efforts at scale, including solutions for content creation and monitoring, core web vitals analysis, log file analysis, and tracking industry updates and search engine documentation."
     ]
   },
   {
