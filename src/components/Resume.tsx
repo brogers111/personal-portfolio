@@ -52,7 +52,7 @@ const experience = [
   {
     logo: turbotenantLogo,
     logoAlt: "TurboTenant logo",
-    location: "Denver, Colorado, United States (Hybrid)",
+    location: "Denver, CO, USA (Hybrid)",
     title: "Senior SEO Manager",
     duration: "4 mos",
     dates: "March, 2026 - Present",
@@ -67,8 +67,8 @@ const experience = [
     logoAlt: "Amsive logo",
     location: "New York, NY, USA (Remote)",
     title: "SEO Specialist",
-    duration: "4 yrs 2 mos",
-    dates: "February, 2022 - Present",
+    duration: "4 yrs",
+    dates: "February, 2022 - February, 2026",
     bullets: [
       "Developed and executed 30+ effective search and local SEO campaigns, increasing organic traffic by 70% and conversions by 107% for clients in finance, senior living, healthcare, and self-storage industries within 12 months.",
       "Utilized advanced SEO tools (Ahrefs, SEMrush, Screaming Frog, GSC, GTM, GA4, Ryte, BrightLocal, STAT) to conduct keyword research, track valued KPI’s, and deliver monthly reports to clients.",
