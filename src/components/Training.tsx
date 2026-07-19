@@ -81,7 +81,7 @@ const marqueeItems = [
 
 const stats = [
   { value: '7+', label: 'Years Coaching' },
-  { value: '200+', label: 'Athletes Trained' },
+  { value: '800+', label: 'Athletes Trained' },
   { value: '8', label: 'Countries Coached In' },
   { value: 'DIII-DI', label: 'Training Experience' },
 ]
