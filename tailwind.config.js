@@ -7,6 +7,13 @@ module.exports = {
         bluffolk: ["bluffolk", "sans-serif"],
         dongle: ["dongle", "sans-serif"],
       },
+      colors: {
+        accent: {
+          light: "#e8635a",
+          DEFAULT: "#c23b32",
+          dark: "#9c2e27",
+        },
+      },
     },
   },
   plugins: [],

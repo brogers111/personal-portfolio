@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faHouse, faFile, faHammer, faAddressCard } from '@fortawesome/free-solid-svg-icons'
+import { faHouse, faFile, faHammer, faAddressCard, faBasketball } from '@fortawesome/free-solid-svg-icons'
 
 function Nav() {
   return (
@@ -27,6 +27,13 @@ function Nav() {
           title="Technical Projects"
         >
           <FontAwesomeIcon icon={faHammer} />
+        </Link>
+        <Link
+          to="/training"
+          className="text-gray-300 text-2xl hover:text-gray-400 transition-colors cursor-pointer-custom"
+          title="Training"
+        >
+          <FontAwesomeIcon icon={faBasketball} />
         </Link>
         <Link
           to="/contact"
@@ -65,6 +72,13 @@ function Nav() {
           title="Technical Projects"
         >
           <FontAwesomeIcon icon={faHammer} />
+        </Link>
+        <Link
+          to="/training"
+          className="text-gray-400 text-2xl"
+          title="Training"
+        >
+          <FontAwesomeIcon icon={faBasketball} />
         </Link>
         <Link
           to="/contact"
