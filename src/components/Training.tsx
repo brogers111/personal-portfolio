@@ -22,7 +22,7 @@ import mapImage from '../assets/training-photos/map.png'
 import venmoQr from '../assets/training-photos/venmo-qrcode.jpg'
 import paypalQr from '../assets/training-photos/paypal-qrcode.jpg'
 import marymountLogo from '../assets/logos/mu-logo.png'
-import facilityImage from '../assets/training-photos/facility.png'
+import facilityImage from '../assets/training-photos/court1.png'
 import intlCoaching1 from '../assets/training-photos/intl-coaching1.jpg'
 import trainingHeadshot from '../assets/training-photos/training-headshot.png'
 import extendedLogo from '../assets/training-photos/extended-logo.png'
@@ -518,6 +518,13 @@ function Training() {
                   Saving {formatCurrency(pricing.savings)} vs. solo rate
                 </p>
               ) : null}
+
+              <div className="mt-6 border-t border-white/10 pt-6">
+                <p className="font-dongle text-xl leading-none text-accent-light">FOR ATHLETES IN LOW-INCOME FAMILIES</p>
+                <p className="mt-2 font-dongle text-lg leading-none text-gray-300">
+                  I'm a product of teachers, so I know what it's like to not be able to afford expensive camps and training. If that's also you, please reach out anyway — we can work out a pricing structure that works for you.
+                </p>
+              </div>
             </div>
           </div>
         </section>
