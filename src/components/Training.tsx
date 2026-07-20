@@ -267,7 +267,7 @@ function Training() {
       <header className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
         <img src={extendedLogo} alt="Barn Work" className="h-12 w-auto sm:h-14" />
         <a
-          href={EMAIL_HREF}
+          href="#contact"
           className="inline-flex items-center gap-2 rounded-full bg-accent px-5 py-2.5 font-dongle text-xl leading-none text-white transition-colors hover:bg-accent-dark"
         >
           <FontAwesomeIcon className="size-3.5" icon={faEnvelope} />
@@ -384,7 +384,7 @@ function Training() {
               Built on <span className="text-accent">22 years</span> of playing experience and <span className="text-accent">8+ years</span> of coaching experience, every session runs 60 minutes on a private half-court — three players maximum per session.
             </p>
             <a
-              href={EMAIL_HREF}
+              href="#contact"
               className="inline-flex shrink-0 items-center gap-2 rounded-full bg-accent px-6 py-3 font-dongle text-xl leading-none text-white transition-colors hover:bg-accent-dark"
             >
               <FontAwesomeIcon className="size-3.5" icon={faEnvelope} />
@@ -723,19 +723,23 @@ function Training() {
           </div>
         </section>
 
-        {/* Footer CTA */}
-        <section className="rounded-3xl bg-gray-800 p-8 text-center text-white sm:p-12">
-          <p className="font-dongle text-2xl text-gray-400">READY TO</p>
-          <h2 className="font-bluffolk text-5xl leading-none sm:text-6xl">GET STARTED?</h2>
-          <div className="mt-6 flex items-center justify-center">
-            <a
-              href={EMAIL_HREF}
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-accent px-6 py-3 font-dongle text-2xl leading-none text-white transition-colors hover:bg-accent-dark"
-            >
-              <FontAwesomeIcon className="size-4" icon={faEnvelope} />
-              Contact
-            </a>
-          </div>
+        {/* Contact */}
+        <section id="contact" className="scroll-mt-10 rounded-3xl bg-gray-800 p-8 text-center text-white sm:p-12">
+          <p className="font-dongle text-2xl text-gray-400">GET IN</p>
+          <h2 className="font-bluffolk text-5xl leading-none sm:text-6xl">TOUCH</h2>
+          <p className="mx-auto mt-4 max-w-xl font-dongle text-2xl leading-none text-gray-300">
+            Questions about training, pricing, or scheduling? Reach out and I'll be in touch within 48 hours.
+          </p>
+          <a
+            href={EMAIL_HREF}
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-dongle text-2xl leading-none text-white transition-colors hover:bg-accent-dark"
+          >
+            <FontAwesomeIcon className="size-4" icon={faEnvelope} />
+            contact@brandonrogersconsulting.com
+          </a>
+          <p className="mx-auto mt-4 max-w-md font-dongle text-lg leading-none text-gray-400">
+            If tapping that doesn't open your email app (common in the TikTok or Instagram in-app browser), just copy the email address above and send it directly.
+          </p>
         </section>
       </div>
 
