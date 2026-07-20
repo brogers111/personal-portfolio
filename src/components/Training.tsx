@@ -16,7 +16,7 @@ import {
   faBrain,
   faPersonRunning,
 } from '@fortawesome/free-solid-svg-icons'
-import { faTiktok } from '@fortawesome/free-brands-svg-icons'
+import { faTiktok, faInstagram } from '@fortawesome/free-brands-svg-icons'
 import heroImage from '../assets/training-photos/hero-image.png'
 import mapImage from '../assets/training-photos/map.png'
 import venmoQr from '../assets/training-photos/venmo-qrcode.jpg'
@@ -29,6 +29,7 @@ import extendedLogo from '../assets/training-photos/extended-logo.png'
 import comingSoonImage from '../assets/training-photos/coming-soon.png'
 
 const TIKTOK_URL = 'https://www.tiktok.com/@brandon11rogers'
+const INSTAGRAM_URL = 'https://www.instagram.com/barnworktraining/'
 const DIRECTIONS_URL = 'https://www.google.com/maps/dir/?api=1&destination=5706+Tabor+St,+Arvada,+CO+80002'
 const EMAIL_HREF = 'mailto:contact@brandonrogersconsulting.com'
 
@@ -80,8 +81,8 @@ const marqueeItems = [
 ]
 
 const stats = [
-  { value: '7+', label: 'Years Coaching' },
-  { value: '800+', label: 'Athletes Trained' },
+  { value: '8+', label: 'Years Coaching' },
+  { value: '900+', label: 'Athletes Trained' },
   { value: '8', label: 'Countries Coached In' },
   { value: 'DIII-DI', label: 'Training Experience' },
 ]
@@ -90,13 +91,13 @@ const tabs = [
   { label: 'Facility', href: '#about' },
   { label: 'Training', href: '#program' },
   { label: 'Pricing', href: '#pricing' },
-  { label: 'Directions', href: '#directions' },
+  { label: 'Availability & Directions', href: '#directions' },
   { label: 'Testimonials', href: '#results' },
 ]
 
 const aboutPhotos = [
   { src: heroImage, alt: 'The private half-court training facility', title: 'The facility', caption: "A private half-court built for working hard in silence" },
-  { src: intlCoaching1, alt: 'Working on ball handling with a youth training group', title: '7 years of coaching experience', caption: 'From middle schoolers in Japan to DI athletes in the US' },
+  { src: intlCoaching1, alt: 'Working on ball handling with a youth training group', title: '8 years of coaching experience', caption: 'From middle schoolers in Japan to DI athletes in the US' },
 ]
 
 const bentoTopPhotos = [
@@ -170,6 +171,35 @@ const testimonials = [
     role: 'Class of 2023, DIII commit',
   },
 ]
+
+// Current open training hours. To update: flip `booked` to true/false per slot as sessions fill up or open back up.
+const availability = [
+  {
+    day: 'Monday',
+    slots: [
+      { time: '7 - 8 PM', booked: true },
+      { time: '8 - 9 PM', booked: false },
+      { time: '9 - 10 PM', booked: false },
+    ],
+  },
+  {
+    day: 'Wednesday',
+    slots: [
+      { time: '7 - 8 PM', booked: true },
+      { time: '8 - 9 PM', booked: false },
+      { time: '9 - 10 PM', booked: false },
+    ],
+  },
+  {
+    day: 'Friday',
+    slots: [
+      { time: '7 - 8 PM', booked: false },
+      { time: '8 - 9 PM', booked: false },
+      { time: '9 - 10 PM', booked: false },
+    ],
+  },
+]
+const availabilityTimeLabels = availability[0].slots.map((slot) => slot.time)
 
 const faqs = [
   {
@@ -420,15 +450,26 @@ function Training() {
             <h2 className="font-bluffolk text-4xl leading-none sm:text-5xl">WATCH A REAL WORKOUT</h2>
             <p className="mt-3 max-w-md font-dongle text-2xl leading-none text-gray-300">Drill inspiration, college recruiting advice, and full workouts to do at home — posted regularly on TikTok, Instagram, and YouTube.</p>
           </div>
-          <a
-            href={TIKTOK_URL}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex shrink-0 items-center gap-2 rounded-full bg-accent px-6 py-3 font-dongle text-2xl leading-none text-white transition-colors hover:bg-accent-dark"
-          >
-            <FontAwesomeIcon className="size-4" icon={faTiktok} />
-            @brandon11rogers
-          </a>
+          <div className="flex shrink-0 flex-wrap justify-center gap-3">
+            <a
+              href={TIKTOK_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-dongle text-2xl leading-none text-white transition-colors hover:bg-accent-dark"
+            >
+              <FontAwesomeIcon className="size-4" icon={faTiktok} />
+              @brandon11rogers
+            </a>
+            <a
+              href={INSTAGRAM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 rounded-full border-2 border-white/40 px-6 py-3 font-dongle text-2xl leading-none text-white transition-colors hover:border-accent hover:text-accent-light"
+            >
+              <FontAwesomeIcon className="size-4" icon={faInstagram} />
+              @barnworktraining
+            </a>
+          </div>
         </section>
 
         {/* Credentials */}
@@ -522,7 +563,7 @@ function Training() {
               <div className="mt-6 border-t border-white/10 pt-6">
                 <p className="font-dongle text-xl leading-none text-accent-light">FOR ATHLETES IN LOW-INCOME FAMILIES</p>
                 <p className="mt-2 font-dongle text-lg leading-none text-gray-300">
-                  I'm a product of teachers, so I know what it's like to not be able to afford expensive camps and training. If that's also you, please reach out anyway — we can work out a pricing structure that works for you.
+                  I'm a product of two teachers, so I know what it's like to not be able to afford expensive camps and training. If that's also you, please reach out anyway — we can work out a pricing structure that works for you. This is a beautiful game and you deserve to get better at it, no matter your financial situation.
                 </p>
               </div>
             </div>
@@ -549,6 +590,89 @@ function Training() {
                 <p className="mt-3 font-dongle text-2xl leading-none text-gray-600">PayPal</p>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Training Information: availability + directions */}
+        <section id="directions" className="scroll-mt-10">
+          <p className="font-dongle text-3xl text-gray-300">SCHEDULE &</p>
+          <h2 className="font-bluffolk text-5xl text-gray-800 md:text-6xl">TRAINING INFORMATION</h2>
+          <p className="mt-4 max-w-2xl font-dongle text-2xl leading-none text-gray-400">
+            Current session availability and everything you need to find the gym.
+          </p>
+
+          <div className="mt-6 grid gap-6 lg:grid-cols-2">
+            <div className="rounded-3xl bg-gray-100 p-8">
+              <p className="font-dongle text-2xl text-gray-300">CURRENT</p>
+              <h3 className="font-bluffolk text-4xl leading-none text-gray-800">AVAILABILITY</h3>
+              <p className="mt-2 font-dongle text-xl leading-none text-gray-500">Open training hours — subject to change as sessions fill up.</p>
+
+              <div className="mt-6 overflow-hidden rounded-2xl border border-gray-200">
+                <div className="grid grid-cols-4 bg-white">
+                  <div className="p-3" />
+                  {availability.map((d) => (
+                    <div key={d.day} className="border-l border-gray-200 p-3 text-center font-dongle text-xl leading-none text-gray-700">
+                      {d.day.slice(0, 3)}
+                    </div>
+                  ))}
+                </div>
+                {availabilityTimeLabels.map((time, rowIndex) => (
+                  <div key={time} className="grid grid-cols-4 border-t border-gray-200 bg-white">
+                    <div className="flex items-center justify-center p-3 font-dongle text-lg leading-none text-gray-400">{time}</div>
+                    {availability.map((d) => {
+                      const slot = d.slots[rowIndex]
+                      return (
+                        <div
+                          key={d.day}
+                          className={`flex items-center justify-center border-l border-gray-200 p-3 ${slot.booked ? 'bg-gray-50' : 'bg-accent/10'}`}
+                        >
+                          <span className={`font-dongle text-lg leading-none ${slot.booked ? 'text-gray-400' : 'text-accent'}`}>
+                            {slot.booked ? 'Booked' : 'Open'}
+                          </span>
+                        </div>
+                      )
+                    })}
+                  </div>
+                ))}
+              </div>
+
+              <div className="mt-4 flex gap-4">
+                <span className="flex items-center gap-1.5 font-dongle text-lg leading-none text-gray-500">
+                  <span className="size-2.5 rounded-full bg-accent" />
+                  Open
+                </span>
+                <span className="flex items-center gap-1.5 font-dongle text-lg leading-none text-gray-500">
+                  <span className="size-2.5 rounded-full bg-gray-300" />
+                  Booked
+                </span>
+              </div>
+            </div>
+
+            <a
+              href={DIRECTIONS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group rounded-3xl bg-gray-100 p-8 transition-colors hover:bg-gray-200"
+            >
+              <p className="font-dongle text-2xl text-gray-300">FIND THE</p>
+              <h3 className="font-bluffolk text-4xl leading-none text-gray-800">GYM</h3>
+              <p className="mt-2 max-w-md font-dongle text-xl leading-none text-gray-500">
+                Contact Coach Brandon with your estimated arrival time as the gym is only accessible via key fob.
+              </p>
+              <div className="mt-4 flex items-start gap-2">
+                <FontAwesomeIcon className="mt-1.5 size-4 shrink-0 text-accent" icon={faLocationDot} />
+                <p className="font-dongle text-2xl leading-none text-gray-600">
+                  5706 Tabor St<br />Arvada, CO 80002
+                </p>
+              </div>
+              <div className="mt-4 overflow-hidden rounded-2xl border-2 border-transparent transition-colors group-hover:border-accent">
+                <img src={mapImage} alt="Map to 5706 Tabor St, Arvada, CO 80002" className="w-full" />
+              </div>
+              <span className="mt-4 inline-flex items-center gap-2 font-dongle text-2xl leading-none text-accent">
+                Get directions
+                <FontAwesomeIcon className="size-3" icon={faArrowRight} />
+              </span>
+            </a>
           </div>
         </section>
 
@@ -599,34 +723,6 @@ function Training() {
           </div>
         </section>
 
-        {/* Directions */}
-        <a
-          id="directions"
-          href={DIRECTIONS_URL}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="group scroll-mt-10"
-        >
-          <p className="font-dongle text-3xl text-gray-300">FIND THE</p>
-          <h2 className="font-bluffolk text-5xl text-gray-800 md:text-6xl">GYM</h2>
-          <p className="mt-2 max-w-md font-dongle text-2xl leading-none text-gray-400">
-            Contact Coach Brandon with your estimated arrival time as the gym is only accessible via key fob.
-          </p>
-          <div className="mt-4 flex items-start gap-2">
-            <FontAwesomeIcon className="mt-1.5 size-4 shrink-0 text-accent" icon={faLocationDot} />
-            <p className="font-dongle text-2xl leading-none text-gray-600">
-              5706 Tabor St<br />Arvada, CO 80002
-            </p>
-          </div>
-          <div className="mt-4 w-full max-w-md overflow-hidden rounded-2xl border-2 border-transparent transition-colors group-hover:border-accent">
-            <img src={mapImage} alt="Map to 5706 Tabor St, Arvada, CO 80002" className="w-full" />
-          </div>
-          <span className="mt-4 inline-flex items-center gap-2 font-dongle text-2xl leading-none text-accent">
-            Get directions
-            <FontAwesomeIcon className="size-3" icon={faArrowRight} />
-          </span>
-        </a>
-
         {/* Footer CTA */}
         <section className="rounded-3xl bg-gray-800 p-8 text-center text-white sm:p-12">
           <p className="font-dongle text-2xl text-gray-400">READY TO</p>
@@ -644,7 +740,7 @@ function Training() {
       </div>
 
       <footer className="border-t border-gray-100 py-8 text-center">
-        <p className="font-dongle text-xl leading-none text-gray-300">© {new Date().getFullYear()} Brandon Rogers Training · Arvada, CO</p>
+        <p className="font-dongle text-xl leading-none text-gray-300">© {new Date().getFullYear()} Barn Work Training · Arvada, CO</p>
       </footer>
     </div>
   )

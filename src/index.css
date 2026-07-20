@@ -30,9 +30,11 @@
 @font-face {
     font-family: 'bluffolk';
     src: url('./assets/fonts/Bluffolk-nAD4V.ttf') format('truetype');
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'dongle';
     src: url('./assets/fonts/Dongle-Light.ttf') format('truetype');
+    font-display: swap;
 }
