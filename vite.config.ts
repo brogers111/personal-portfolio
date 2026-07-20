@@ -12,6 +12,9 @@ const clientPages = {
   contact: resolve(__dirname, 'contact/index.html'),
   training: resolve(__dirname, 'training/index.html'),
   'not-found': resolve(__dirname, '404.html'),
+  // Private, auth-gated, and fully dynamic — deliberately left out of
+  // ssrPages/scripts/prerender.mjs. No point prerendering a login screen.
+  admin: resolve(__dirname, 'admin/index.html'),
 }
 
 // SSR entries used only at build time (see scripts/prerender.mjs) to bake
