@@ -735,10 +735,10 @@ function Training() {
             className="mt-6 inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-dongle text-2xl leading-none text-white transition-colors hover:bg-accent-dark"
           >
             <FontAwesomeIcon className="size-4" icon={faEnvelope} />
-            contact@brandonrogersconsulting.com
+            Contact
           </a>
           <p className="mx-auto mt-4 max-w-md font-dongle text-lg leading-none text-gray-400">
-            If tapping that doesn't open your email app (common in the TikTok or Instagram in-app browser), just copy the email address above and send it directly.
+            If tapping that doesn't open your email app (common in the TikTok or Instagram in-app browser), just email me directly at contact@brandonrogersconsulting.com.
           </p>
         </section>
       </div>
