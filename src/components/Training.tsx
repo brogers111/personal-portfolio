@@ -458,7 +458,7 @@ function Training() {
               className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-dongle text-2xl leading-none text-white transition-colors hover:bg-accent-dark"
             >
               <FontAwesomeIcon className="size-4" icon={faTiktok} />
-              @brandon11rogers
+              @BarnWorkTraining
             </a>
             <a
               href={INSTAGRAM_URL}
@@ -467,7 +467,7 @@ function Training() {
               className="inline-flex items-center gap-2 rounded-full border-2 border-white/40 px-6 py-3 font-dongle text-2xl leading-none text-white transition-colors hover:border-accent hover:text-accent-light"
             >
               <FontAwesomeIcon className="size-4" icon={faInstagram} />
-              @barnworktraining
+              @BarnWorkTrainingß
             </a>
           </div>
         </section>
