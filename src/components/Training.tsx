@@ -28,7 +28,7 @@ import trainingHeadshot from '../assets/training-photos/training-headshot.png'
 import extendedLogo from '../assets/training-photos/extended-logo.png'
 import comingSoonImage from '../assets/training-photos/coming-soon.png'
 
-const TIKTOK_URL = 'https://www.tiktok.com/@brandon11rogers'
+const TIKTOK_URL = 'https://www.tiktok.com/@barnworktraining'
 const INSTAGRAM_URL = 'https://www.instagram.com/barnworktraining/'
 const DIRECTIONS_URL = 'https://www.google.com/maps/dir/?api=1&destination=5706+Tabor+St,+Arvada,+CO+80002'
 const EMAIL_HREF = 'mailto:contact@brandonrogersconsulting.com'
