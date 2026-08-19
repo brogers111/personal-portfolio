@@ -178,7 +178,7 @@ const availability = [
     day: 'Monday',
     slots: [
       { time: '7 - 8 PM', booked: true },
-      { time: '8 - 9 PM', booked: false },
+      { time: '8 - 9 PM', booked: true },
       { time: '9 - 10 PM', booked: false },
     ],
   },
@@ -193,9 +193,9 @@ const availability = [
   {
     day: 'Friday',
     slots: [
-      { time: '7 - 8 PM', booked: false },
-      { time: '8 - 9 PM', booked: false },
-      { time: '9 - 10 PM', booked: false },
+      { time: '7 - 8 PM', booked: true },
+      { time: '8 - 9 PM', booked: true },
+      { time: '9 - 10 PM', booked: true },
     ],
   },
 ]
